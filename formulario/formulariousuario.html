@@ -1,0 +1,172 @@
+<form action="local de envio do form" method="post">
+
+    <link rel="stylesheet" href="estilo.css"/>
+    <head>        
+        <title>Formulário</title>
+    </head>
+
+
+
+    <div id="contato">
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" placeholder="Digite seu email" required/>
+    </div>
+
+    <div id="contato">
+        <label for="mail">Repetir E-mail:</label>
+        <input type="email" id="mail" placeholder="confirme seu email" required/>
+    </div>
+
+    <div id="contato">
+        <label for="name">Crie uma Senha:</label>
+        <input type="text" id="name"placeholder="digite uma senha " required />
+    </div>
+
+    <div id="contato">
+        <label for="name">Repetir Senha:</label>
+        <input type="text" id="name"placeholder="repita a senha criada" required />
+    </div>
+
+    <hr/>
+
+
+    <div id="dados1">
+        <h1>Dados Cadastrais</h1>
+        <div id="texto">
+        <p>* Campos obrigatórios</p></br>
+        </div>
+
+        <div id="dados">
+            <label1 for="name">Nome:</label>
+            <input type="text" id="name" placeholder="Digite seu primeiro nome " required />
+        </div>
+        <div id="dados" >
+            <label1 for="name">Sobremone:</label>
+            <input type="text" id="name" placeholder="Digite seu sobrenome " required/>
+        </div>
+
+        <div id="dados">
+            <label1 for="name">Gênero</label>
+            <select id="genero">
+              <option selected disabled value="">Selecione</option>
+              <option>Feminino</option>
+              <option>Masculino</option>
+              <option>Outros</option>
+            </select>
+        </div>
+          
+        <div id="dados">
+            <label for="rg">RG</label>
+            <input type="text" name="rg" id="rg" placeholder="Apenas números" maxlength="9"
+            onblur="validacao(rg.value)" required>
+        </div>
+
+        <div id="dados">
+            <label for="cpf">CPF</label>
+            <input type="number" name="cpf" id="cpf" placeholder="Apenas números" maxlength="11"
+            onblur="validacao(cpf.value)" required>
+        </div>
+
+        <div id="dados">
+            <label for="data">Data de Nascimento</label>
+            <input type="date" name="data" id="data" placeholder="dd/mm/aaaa" maxlength="10">
+        </div>
+
+        <div id="dados">
+            <label for="fixo">Telefone Fixo</label>
+            <input type="number" name="fixo" id="fixo" placeholder="(00) 0000-0000" maxlength="14">
+        </div>
+
+          <div id="dados">
+            <label for="celular" class="required">Telefone Celular</label>
+            <input type="number" name="celular" id="celular" placeholder="(00) 00000-0000" maxlength="15">            
+          </div>
+
+    </div>
+
+
+    <div id="dados2">
+        <h1>Endereço</h1>       
+    
+
+        <div id="dados">
+            <label for="Logradouro" class="required">Logradouro</label>
+            <input type="text" name="Logradouro" id="Logradouro" placeholder="Avenida, Rua, Travessa ..."" required>
+         </div>
+        
+        <div id="dados">
+            <label for="numero" class="required">Número</label>
+            <input type="text" name="numero" id="numero" placeholder="ex.:00" required>
+        </div>
+
+        <div id="dados">
+            <label for="complemento">Complemento</label>
+            <input type="text" name="complemento" id="complemento" placeholder="Casa, apto...">
+        </div>
+
+        <div id="dados">
+            <label for="bairro">Bairro</label>
+            <input type="text" name="bairro" id="bairro" placeholder="Digite seu bairro">
+        </div>
+      
+        <div id="dados">
+            <label for="cidade">Cidade</label>
+            <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade">
+        </div>
+
+        <div id="dados">
+            <label>Estado</label>
+            <select id="estado">
+            <option selected disabled value="">Selecione</option>
+            <option>AC</option>
+            <option>AL</option>
+            <option>AP</option>
+            <option>AM</option>
+            <option>BA</option>
+            <option>CE</option>
+            <option>DF</option>
+            <option>ES</option>
+            <option>GO</option>
+            <option>MA</option>
+            <option>MG</option>
+            <option>MT</option>
+            <option>MS</option>
+            <option>PA</option>          
+            <option>PB</option>
+            <option>PE</option>
+            <option>PI</option>
+            <option>PR</option>
+            <option>RJ</option>
+            <option>RN</option>
+            <option>RO</option>
+            <option>RR</option>
+            <option>RS</option>
+            <option>SC</option>
+            <option>SE</option>
+            <option>SP</option>
+            <option>TO</option>
+            </select>
+        </div>
+        <hr />
+              
+    </div>
+
+       <script>
+        function funcao1()
+        {
+        alert("Formulario Enviado!");
+        }
+        </script>
+
+        <body>
+        
+        <input type="button" style="width:90px;height:50px" onclick="funcao1()" value="Cadastrar"/>
+        
+
+        
+        </body>
+
+
+
+
+</form>
